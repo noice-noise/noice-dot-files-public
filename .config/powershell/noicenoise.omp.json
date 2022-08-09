@@ -61,19 +61,6 @@
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
           "type": "git"
         }
-        // {
-        //   "background": "#8f93a2",
-        //   "foreground": "#d6deeb",
-        //   "leading_diamond": "<transparent,#8f93a2>\ue0b0</>",
-        //   "properties": {
-        //     "style": "roundrock",
-        //     "threshold": 0
-        //   },
-        //   "style": "diamond",
-        //   "template": " {{ .FormattedMs }} ",
-        //   "trailing_diamond": "\ue0b0",
-        //   "type": "executiontime"
-        // }
       ],
       "type": "prompt"
     },
