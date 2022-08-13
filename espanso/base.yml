@@ -6,17 +6,17 @@ matches:
   # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
 
   # Print the current date
-  - trigger: ":date"
-    replace: "{{mydate}}"
+  - trigger: ':date'
+    replace: '{{mydate}}'
     vars:
       - name: mydate
         type: date
         params:
-          format: "%m/%d/%Y"
+          format: '%m/%d/%Y'
 
   # Print the output of a shell command
-  - trigger: ":shell"
-    replace: "{{output}}"
+  - trigger: ':shell'
+    replace: '{{output}}'
     vars:
       - name: output
         type: shell
@@ -24,7 +24,19 @@ matches:
           cmd: "echo 'Hello from your shell'"
 
   # Noice Personal Matches
-  - trigger: "ddg"
-    replace: "duckduckdo "
+  - trigger: '..ch'
+    replace: 'gaa && gcmsg "chore: "'
+
+  - trigger: '..fe'
+    replace: 'gaa && gcmsg "feat: "'
+
+  - trigger: '..re'
+    replace: 'gaa && gcmsg "refactor: "'
+
+  - trigger: '..fx'
+    replace: 'gaa && gcmsg "fix: "'
+
+  - trigger: '..doc'
+    replace: 'gaa && gcmsg "docs: "'
 
   # And much more! For more information, visit the docs: https://espanso.org/docs/
